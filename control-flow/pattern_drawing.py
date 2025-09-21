@@ -1,6 +1,8 @@
-positive_integer = int(input("Enter the size of the pattern: "))
+size = int(input("Enter the size of the pattern: "))
 
-while positive_integer >= 1:
-    for i in range(positive_integer):
-        print("*" * positive_integer)
-    break
+row = 0
+while row < size:              # while loop controls rows
+    for col in range(size):    # for loop controls columns
+        print("*", end="")     # print stars side by side
+    print()                    # move to next line after finishing a row
+    row += 1
